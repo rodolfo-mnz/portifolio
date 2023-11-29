@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    background-color: #000000;
+    height: 100vh;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 15%;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    font-family: 'Krona One', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: purple;
+    font-size: 35px;
+    font-family: 'Krona One', sans-serif;
+}
+
+h2 span {
+    position: relative;
+}
+
+h2 span::before {
+    content: "";
+    color: purple;
+    animation: subtitulo 10.2s infinite;
+}
+
+h2 span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid purple;
+    right: -10px;
+    opacity: 1;
+    animation: cursor .9s infinite, digita 24s steps(14) infinite;
+    width: calc(100% + 10px);
+    background-color: black;
+
+}
+
+@keyframes digita {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 10px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid black;
+    }
+
+}
+
+
+@keyframes subtitulo {
+
+    0%,
+    50% {
+        content: "Desenvolvedor Web";
+    }
+
+    51%,
+    100% {
+        content: "Front-End Developer";
+    }
+}
+
+p {
+    font-size: 28px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    border-radius: 16px;
+    width: 420px;
+    height: 534px;
+}
+
+.p-strong {
+    color: purple;
+}
+
+.apresentacao__links1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links2 {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+}
+
+a {
+    background-color: purple;
+    border-radius: 16px;
+    color: white;
+    font-size: 26px;
+    width: 240px;
+    text-align: center;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 80px;
+
+
+}
+
+.caixa {
+    position: relative;
+    width: 420px;
+    height: 534px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 22px;
+    justify-content: center;
+
+}
+
+.caixa::before,
+.caixa::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    background: linear-gradient(40deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 16px;
+    animation: animarBorda 14s linear infinite;
+}
+
+
+@keyframes animarBorda {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+
+}
+
+.caixa::after {
+    filter: blur(14px);
+}

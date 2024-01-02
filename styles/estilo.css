@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: #000000;
+    height: 100;
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    color: purple;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.cabecalho__menu__link:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+
+.apresentacao__conteudo {
+    width: 615px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 15%;
+    box-sizing: border-box;
+    
+}
+
+.apresentacao__experencia{
+    display: flex;
+    box-sizing: border-box;
+    padding: 14px;
+    padding-top: 45px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.sobre-mim{
+    font-size: 34px;
+    color: purple;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: purple;
+    font-size: 35px;
+    font-family: 'Krona One', sans-serif;
+    text-transform: bold;
+}
+
+.sub__apresentacao__experencia{
+    text-transform: uppercase;
+    color: purple;
+    font-size: 32px;
+    font-family: 'Krona One', sans-serif;
+    padding-bottom: 12px;
+}
+
+p {
+    font-size: 28px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.texto__sobre-mim{
+    margin-left: -50%;
+    margin-right: -5%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+
+.section__img {
+    border-radius: 16px;
+    width: 420px;
+    height: 534px;
+}
+
+
+
+.p-strong {
+    color: purple;
+    font-style: bold;
+    font-weight: 400px;
+}
+
+.apresentacao__links1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.apresentacao__links1__titulo {
+    color: white;
+    font-size: 22px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 350;
+    margin-left: -70px;
+    margin-top: 14px;
+}
+
+.apresentacao__links1__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-color: purple;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    width: 378px;
+    text-align: center;
+    padding: 22px 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 80px;
+
+}
+
+.link__apresentacao__experencia{
+    text-decoration: none;
+    color: white;
+}
+
+.link__apresentacao__experencia:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+
+
+.apresentacao__links1__link:hover{
+    background-color: purple;
+    width: 400px;
+    transition: all 0.5s;
+}
+
+.img__github{
+    height: 44px;
+    width: 44px;
+}
+
+
+
+.caixa {
+    position: relative;
+    width: 420px;
+    height: 534px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 22px;
+    justify-content: center;
+
+}
+
+.caixa::before,
+.caixa::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    background: linear-gradient(40deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 16px;
+    animation: animarBorda 14s linear infinite;
+}
+
+
+@keyframes animarBorda {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+
+}
+
+.caixa::after {
+    filter: blur(14px);
+}
+
+.rodape p{        
+    background-color: red;
+    display: flex;
+    margin-top: 10px;
+}
+
+li{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding: 12px;
+}
+
+strong{
+    font-weight: 480;
+    font-size: 27px;
+}
+

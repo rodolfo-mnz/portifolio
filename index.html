@@ -3,35 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles/estilo.css">
     <title>Portfólio do Rodolfo</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="experiencia.html">Experiência</a>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1> <strong>Rodolfo Menezes Monteiro</strong></h1>
             <h2>
-                <span></span>
+                DESENVOLVEDOR WEB
             </h2>
             <p>Busco minha primeira vaga como desenvolvedor, principais tecnologias que estudo e desenvolvo são <strong
                     class="p-strong">HTML, CSS e JS</strong></p>
             <div class="apresentacao__links1">
-                <a href="https://www.instagram.com/rodolfo.mnz/?hl=en" target="_blank">Instagram</a>
-                <a href="https://github.com/rodolfo-mnz" target="_blank">Github</a>
-            </div>
-            <div class="apresentacao__links2">
-                <a href="https://www.linkedin.com/in/rodolfo-menezes-monteiro-728b69210/" target="_blank">LinkedIn</a>
+                <h2 class="apresentacao__links1__titulo">Acesse minhas redes:</h2>
+
+                <a class="apresentacao__links1__link" href="https://www.instagram.com/rodolfo.mnz/?hl=en"
+                    target="_blank"> <img src="assets/icon-instagram.png" alt="">Instagram</a>
+
+                <a class="apresentacao__links1__link" href="https://github.com/rodolfo-mnz" target="_blank">
+                    <img class="img__github" src="assets/github (2).png" alt="">Github</a>
+
+                <a class="apresentacao__links1__link"
+                    href="https://www.linkedin.com/in/rodolfo-menezes-monteiro-728b69210/" target="_blank">
+                    <img src="assets/icon-linkedin.png" alt="">LinkedIn</a>
             </div>
         </section>
-        <section>
+        <section class="section-foto">
             <div class="caixa">
-                <img src="foto curriculo.jpg" alt="">
+                <img class="section__img" src="assets/foto curriculo.jpg" alt="">
             </div>
         </section>
     </main>
+    <!-- <footer class="rodape">
+        <p>Desenvolvido por Rodolfo.</p>
+    </footer> -->
 </body>
 
 </html>
